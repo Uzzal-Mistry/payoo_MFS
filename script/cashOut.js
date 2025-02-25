@@ -30,10 +30,10 @@ document.getElementById('cash_out_btn').addEventListener('click',
                 alert('Please provide valid Pin Number');
             }
             if(agentIdLength !== 11){
-                alert('Please provide valid Account Number')
+                alert('Please provide valid Account Number');
             }
             if(withdrawAmountConvert<=0){
-                alert('Money should be mort then $1')
+                alert('Money should be mort then $1');
             }
         }
 

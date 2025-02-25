@@ -14,7 +14,7 @@ document.getElementById('add_Money').addEventListener('click',
         const accountNumber = document.getElementById('account_Number').value;
         const accountNumberLength = accountNumber.length;
 
-
+ console.log(amount)
 
         if(accountNumberLength === 11 && pinNumberConvert ===1234 && amountConvert>0){
             const sum = amountConvert + mainAmountConvert;
@@ -29,7 +29,7 @@ document.getElementById('add_Money').addEventListener('click',
             if(pinNumberConvert !== 1234){
                 alert('Please provide valid Pin Number')
             }
-            if(amountConvert<=0){
+            if(amountConvert<=0  ){
                 alert('Money should be more then $1')
             }
         }

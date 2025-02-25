@@ -40,7 +40,7 @@
             <!-- navbar -->
             <section class="border-b-2">
                 <nav class="flex justify-between items-center px-5">
-                  
+
                     <div class="flex mb-5">
                         <img class="w-14" src="assets/logo.png" alt="">
                         <div>
@@ -75,21 +75,23 @@
                 <!-- cards container -->
                 <section class="grid grid-cols-3 gap-5 rounded-lg">
 
-                    <div id="addMoneyBox" class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
+                    <div id="addMoneyBox"
+                        class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/1.png" alt="Shoes" class="" />
                         </figure>
                         <p class="  ">Add Money</p>
                     </div>
 
-                    <div id="cashOutBox" class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
+                    <div id="cashOutBox"
+                        class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/2.png" alt="Shoes" class="" />
                         </figure>
                         <p class="">Cashout</p>
                     </div>
 
-                    <div
+                    <div id="transferMoney"
                         class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/3.png" alt="Shoes" class="" />
@@ -97,7 +99,7 @@
                         <p class="">Transfer Money</p>
                     </div>
 
-                    <div
+                    <div id=""
                         class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/4.png" alt="Shoes" class="" />
@@ -105,7 +107,7 @@
                         <p class="">Get Bonus</p>
                     </div>
 
-                    <div
+                    <div id="payBill"
                         class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/5.png" alt="Shoes" class="" />
@@ -161,12 +163,13 @@
                                         <span class="label-text font-semibold text-[#080808B3]">Bank Account
                                             Number</span>
                                     </label>
-                                    <input id="account_Number" type="number" value="12345678912"  placeholder="Enter 11 digit account number"
-                                        class="input bg-[#F4F5F7] text-sm" required />
+                                    <input id="account_Number" type="number" value="12345678912"
+                                        placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
                                 </div>
 
                                 <!-- add amount -->
-                                <div class="form-control">
+                                <div class="form-control ">
                                     <label class="label">
                                         <span class="label-text font-semibold text-[#080808B3]">Amount to Add</span>
                                     </label>
@@ -189,7 +192,7 @@
 
                                 <!-- add money button -->
                                 <div class="form-control mt-6">
-                                    <button id="add_Money" class="btn bg-[#0874F2] text-white text-xl font-medium">Add
+                                    <button id="add_Money" class="btn bg-[#0874F2] text-white text-lg font-medium">Add
                                         Money</button>
                                 </div>
 
@@ -198,7 +201,6 @@
                     </div>
                 </div>
             </section>
-
 
             <!-- cash out section -->
             <section id="cash_out_form" class="px-5">
@@ -223,8 +225,9 @@
                                     <label class="label">
                                         <span class="label-text font-semibold text-[#080808B3]">Agent Number</span>
                                     </label>
-                                    <input id="agent_id" type="number" value="12345678912" placeholder="Enter 11 digit account number"
-                                        class="input bg-[#F4F5F7] text-sm" required />
+                                    <input id="agent_id" type="number" value="12345678912"
+                                        placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
                                 </div>
 
                                 <!-- Amount -->
@@ -241,16 +244,80 @@
                                     <label class="label">
                                         <span class="label-text font-semibold text-[#080808B3]">Pin Number</span>
                                     </label>
-                                    <input id="pin_number" type="number" value="1234" placeholder="Enter 4 digit pin number"
-                                        class="input bg-[#F4F5F7] text-sm" required />
+                                    <input id="pin_number" type="number" value="1234"
+                                        placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
 
                                 </div>
 
                                 <!-- withdraw button -->
                                 <div class="form-control mt-6">
                                     <button id="cash_out_btn"
-                                        class="btn bg-[#0874F2] text-white text-xl font-medium">Withdraw
+                                        class="btn bg-[#0874F2] text-white text-lg font-medium">Withdraw
                                         Money</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Transfer Money section -->
+            <section id="transfer_money_form" class="px-5">
+
+                <!-- Transfer Money title -->
+                <div>
+                    <p class="font-bold  mt-8 pl-5">Transfer Money</p>
+                </div>
+
+                <!-- cash out form -->
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col ">
+
+                        <!-- card section -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
+                            <form class="card-body">
+
+
+
+                                <!-- User number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">User Account
+                                            Number</span>
+                                    </label>
+                                    <input id="user_id" type="number" value="12345678912"
+                                        placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
+                                </div>
+
+                                <!-- Amount -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Amount</span>
+                                    </label>
+                                    <input id="send_Amount" type="number" placeholder="Enter amount to withdraw"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+                                </div>
+
+                                <!-- pin number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Pin Number</span>
+                                    </label>
+                                    <input id="pin_number" type="number" value="1234"
+                                        placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
+
+                                </div>
+
+                                <!-- Send button -->
+                                <div class="form-control mt-6">
+                                    <button id="send_money_button"
+                                        class="btn bg-[#0874F2] text-white text-lg font-medium">Send Now</button>
                                 </div>
 
                             </form>
@@ -263,7 +330,79 @@
 
 
 
-            
+            <!-- Pay Bill section -->
+            <section id="pay_Bill_form" class="px-5">
+
+                <!-- Transfer Money title -->
+                <div>
+                    <p class="font-bold  mt-8 pl-5">Pay Bill</p>
+                </div>
+
+                <!-- cash out form -->
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col ">
+
+                        <!-- card section -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
+                            <form class="card-body">
+
+                                <!-- select -->
+                                <label class="label-text font-semibold text-[#080808B3]" for="">Select to Pay </label>
+                                <select class=" select  w-full max-w-xs input bg-[#F4F5F7] text-sm font-medium input ">
+                                    <option disabled selected>Select Bank </option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="bKash">bKash</option>
+                                    <option value="DBL">DBL</option>
+                                </select>
+
+                                <!-- Biller number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Biller Account
+                                            Number</span>
+                                    </label>
+                                    <input id="bill_id" type="number" value="12345678912"
+                                        placeholder="Enter account number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
+                                </div>
+
+                                <!-- Amount -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Amount to Pay</span>
+                                    </label>
+                                    <input id="pay_Amount" type="number" placeholder="Add amount to pay"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+                                </div>
+
+                                <!-- pin number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Pin Number</span>
+                                    </label>
+                                    <input id="pin_number" type="number" value="1234"
+                                        placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
+
+                                </div>
+
+                                <!-- pay button -->
+                                <div class="form-control mt-6">
+                                    <button id="pay_money_button"
+                                        class="btn bg-[#0874F2] text-white text-lg font-medium">Pay Now</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
 
 
         </main>
@@ -276,8 +415,12 @@
     <script src="script/addMoney.js"></script>
     <script src="script/cashOut.js"></script>
     <script src="script/toggle.js"></script>
+    <script src="script/transferMoney.js"></script>
+    <script src="script/payBill.js"></script>
 
     <script>
+
+
 
 
     </script>
