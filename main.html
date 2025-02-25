@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo Bank</title>
+
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/35d850426d.js" crossorigin="anonymous"></script>
+
+
+    <!-- text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .outfit {
+            font-family: "Outfit", serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md  min-h-screen mx-auto  bg-[#F4F5F7] outfit ">
+
+        <header class="bg-white rounded-br-3xl rounded-bl-3xl pt-6">
+            <section class="border-b-2">
+                <nav class="flex justify-between items-center px-5">
+                    <div class="flex mb-5">
+                        <img class="w-14" src="assets/logo.png" alt="">
+                        <div>
+                            <h1 class="font-bold text-xl mb-1">$ <span id="main_amount">45000</span></h1>
+                            <p class="font-medium text-[#08080880]">Available Balance</p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p
+                            class="text-[#08080880] font-medium text-base border rounded-lg border-[#0808081A] px-4 py-1 cursor-pointer">
+                            <i class="fa-solid fa-right-from-bracket fa-rotate-180 mr-2"></i>Log out
+                        </p>
+                    </div>
+
+
+
+
+                </nav>
+            </section>
+
+
+            <!-- welcome Section -->
+            <section class="px-5 pb-5 ">
+                <h1 class="font-bold text-2xl mt-8 mb-3">🔥 Welcome to Payooo!</h1>
+                <p class="text-[#08080880] font-medium text-base mb-5">Enjoy easy and convenient financial services with
+                    us.
+                    Cashout charge is low and </p>
+
+
+                <!-- cards container -->
+                <section class="grid grid-cols-3 gap-5 rounded-lg">
+
+                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                        <figure class="mb-2">
+                            <img src="assets/1.png" alt="Shoes" class="" />
+                        </figure>
+                        <p class="font-medium text-[#08080880]">Add Money</p>
+                    </div>
+
+                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                        <figure class="mb-2">
+                            <img src="assets/2.png" alt="Shoes" class="" />
+                        </figure>
+                        <p class="font-medium text-[#08080880]">Cashout</p>
+                    </div>
+
+                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                        <figure class="mb-2">
+                            <img src="assets/3.png" alt="Shoes" class="" />
+                        </figure>
+                        <p class="font-medium text-[#08080880]">Transfer Money</p>
+                    </div>
+
+                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                        <figure class="mb-2">
+                            <img src="assets/4.png" alt="Shoes" class="" />
+                        </figure>
+                        <p class="font-medium text-[#08080880]">Get Bonus</p>
+                    </div>
+
+                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                        <figure class="mb-2">
+                            <img src="assets/5.png" alt="Shoes" class="" />
+                        </figure>
+                        <p class="font-medium text-[#08080880]">Get Bonus</p>
+                    </div>
+
+                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                        <figure class="mb-2">
+                            <img src="assets/6.png" alt="Shoes" class="" />
+                        </figure>
+                        <p class="font-medium text-[#08080880]">Transaction</p>
+                    </div>
+
+                </section>
+
+
+
+            </section>
+        </header>
+
+
+        <main>
+
+
+            <section class="px-5">
+
+                <div>
+                    <p class="font-bold  mt-8 pl-5">Add Money</p>
+                </div>
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col ">
+
+                        <!-- card section -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
+                            <form class="card-body">
+
+                                <!-- select -->
+                                <label class="label-text font-semibold text-[#080808B3]" for="">Select A Bank</label>
+                                <select class=" select  w-full max-w-xs input bg-[#F4F5F7] text-sm font-medium input ">
+                                    <option disabled selected>Select Bank </option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="bKash">bKash</option>
+                                    <option value="DBL">DBL</option>
+                                </select>
+
+                                <!-- account number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Bank Account
+                                            Number</span>
+                                    </label>
+                                    <input type="number" value="12345678912" placeholder="Enter 11 digit account number"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+                                </div>
+
+                                <!-- add amount -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Amount to Add</span>
+                                    </label>
+                                    <input id="addAmount" type="number" placeholder="Add Amount"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+                                </div>
+
+                                <!-- pin number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Pin Number</span>
+                                    </label>
+                                    <input id="pin_number" type="number" value="1234" placeholder="Enter 4 digit pin number"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+                                    <label class="label">
+                                        <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+                                    </label>
+                                </div>
+
+                                <!-- add money button -->
+                                <div class="form-control mt-6">
+                                    <button id="add_Money" class="btn bg-[#0874F2] text-white text-xl font-medium">Add
+                                        Money</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </section>
+
+    <script src="script/addMoney.js"></script>
+
+    <script>
+        document.getElementById('add_Money').addEventListener('click',
+            function (event) {
+                event.preventDefault();
+
+                const amount = document.getElementById('addAmount').value;
+                const amountConvert = parseInt(amount);
+
+                const mainAmount=document.getElementById('main_amount').innerHTML;
+                const mainAmountConvert=parseInt(mainAmount);
+
+                const pinNumber=document.getElementById('pin_number').value;
+                const pinNumberConvert=parseInt(pinNumber);
+
+                if(pinNumberConvert === 1234){
+                    const sum = amountConvert + mainAmountConvert;
+                    document.getElementById('main_amount').innerHTML=sum;
+
+
+                }
+
+                else
+                {
+                    alert('Please Provide Valid Pin Number')
+                }
+
+
+            }
+        )
+    </script>
+</body>
+
+</html>

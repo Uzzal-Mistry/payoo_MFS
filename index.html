@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo Bank</title>
+
+
+    <!-- text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .outfit {
+            font-family: "Outfit", serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md  min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-center items-center">
+                <div class="mt-36 relative flex justify-center items-center w-9/12">
+                    <img class="absolute w-48" src="assets/logo1.png" alt="">
+                    <img class="w-16 -mt-20" src="assets/logo.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- login form  -->
+
+        <div class="hero outfit">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body  ">
+
+                        <div class="form-control ">
+                            <label class="label ">
+                                <span class="label-text font-bold text-base ">Mobile Number</span>
+                            </label>
+                            <input id="Account-number" value="12345678912" type="number" placeholder="Enter Your Number" class="input bg-[#F4F5F7] border-none  " required />
+                        </div>
+
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-bold text-base ">4 Digit Pin</span>
+                            </label>
+                            <input id="Pin-number" value="1234" type="text" placeholder="Enter 4 Digit Pin" class="input  bg-[#F4F5F7] border-none" required />
+                            <label class="label">
+                                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            </label>
+                        </div>
+
+                        <div class="form-control mt-6">
+                            <button id="login_btn" class="btn bg-[#0874F2] text-white font-semibold text-lg">Login</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="script/login.js"></script>
+ 
+</body>
+
+</html>
