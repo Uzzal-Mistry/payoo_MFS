@@ -36,8 +36,11 @@
     <section class="max-w-md  min-h-screen mx-auto  bg-[#F4F5F7] outfit ">
 
         <header class="bg-white rounded-br-3xl rounded-bl-3xl pt-6">
+
+            <!-- navbar -->
             <section class="border-b-2">
                 <nav class="flex justify-between items-center px-5">
+                  
                     <div class="flex mb-5">
                         <img class="w-14" src="assets/logo.png" alt="">
                         <div>
@@ -46,6 +49,7 @@
                         </div>
 
                     </div>
+
                     <div>
                         <p
                             class="text-[#08080880] font-medium text-base border rounded-lg border-[#0808081A] px-4 py-1 cursor-pointer">
@@ -71,64 +75,70 @@
                 <!-- cards container -->
                 <section class="grid grid-cols-3 gap-5 rounded-lg">
 
-                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                    <div id="addMoneyBox" class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/1.png" alt="Shoes" class="" />
                         </figure>
-                        <p class="font-medium text-[#08080880]">Add Money</p>
+                        <p class="  ">Add Money</p>
                     </div>
 
-                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                    <div id="cashOutBox" class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/2.png" alt="Shoes" class="" />
                         </figure>
-                        <p class="font-medium text-[#08080880]">Cashout</p>
+                        <p class="">Cashout</p>
                     </div>
 
-                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                    <div
+                        class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/3.png" alt="Shoes" class="" />
                         </figure>
-                        <p class="font-medium text-[#08080880]">Transfer Money</p>
+                        <p class="">Transfer Money</p>
                     </div>
 
-                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                    <div
+                        class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/4.png" alt="Shoes" class="" />
                         </figure>
-                        <p class="font-medium text-[#08080880]">Get Bonus</p>
+                        <p class="">Get Bonus</p>
                     </div>
 
-                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                    <div
+                        class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/5.png" alt="Shoes" class="" />
                         </figure>
-                        <p class="font-medium text-[#08080880]">Get Bonus</p>
+                        <p class="">Pay Bill</p>
                     </div>
 
-                    <div class="card bg-base-100 flex items-center border-2 py-4">
+                    <div
+                        class="card bg-base-100 flex items-center border-2 py-4  cursor-pointer hover:bg-[#0874F20D] hover:border-[#0874F2] text-[#08080880]  hover:text-[#0874F2] font-medium hover:font-bold">
                         <figure class="mb-2">
                             <img src="assets/6.png" alt="Shoes" class="" />
                         </figure>
-                        <p class="font-medium text-[#08080880]">Transaction</p>
+                        <p class="">Transaction</p>
                     </div>
 
                 </section>
 
-
-
             </section>
+
+
         </header>
 
 
         <main>
 
-
-            <section class="px-5">
+            <!-- add money  section-->
+            <section id="add_Money_form" class="px-5">
 
                 <div>
                     <p class="font-bold  mt-8 pl-5">Add Money</p>
                 </div>
+
+                <!-- add Money form -->
                 <div class=" bg-base-200 ">
                     <div class="hero-content flex-col ">
 
@@ -151,7 +161,7 @@
                                         <span class="label-text font-semibold text-[#080808B3]">Bank Account
                                             Number</span>
                                     </label>
-                                    <input type="number" value="12345678912" placeholder="Enter 11 digit account number"
+                                    <input id="account_Number" type="number" value="12345678912"  placeholder="Enter 11 digit account number"
                                         class="input bg-[#F4F5F7] text-sm" required />
                                 </div>
 
@@ -169,8 +179,9 @@
                                     <label class="label">
                                         <span class="label-text font-semibold text-[#080808B3]">Pin Number</span>
                                     </label>
-                                    <input id="pin_number" type="number" value="1234" placeholder="Enter 4 digit pin number"
-                                        class="input bg-[#F4F5F7] text-sm" required />
+                                    <input id="pin_number" type="number" value="1234"
+                                        placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] text-sm"
+                                        required />
                                     <label class="label">
                                         <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
                                     </label>
@@ -187,41 +198,88 @@
                     </div>
                 </div>
             </section>
+
+
+            <!-- cash out section -->
+            <section id="cash_out_form" class="px-5">
+
+                <!-- cash out title -->
+                <div>
+                    <p class="font-bold  mt-8 pl-5">Cash Out</p>
+                </div>
+
+                <!-- cash out form -->
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col ">
+
+                        <!-- card section -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
+                            <form class="card-body">
+
+
+
+                                <!-- agent number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Agent Number</span>
+                                    </label>
+                                    <input id="agent_id" type="number" value="12345678912" placeholder="Enter 11 digit account number"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+                                </div>
+
+                                <!-- Amount -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Amount</span>
+                                    </label>
+                                    <input id="withdraw_Amount" type="number" placeholder="Enter amount to withdraw"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+                                </div>
+
+                                <!-- pin number -->
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-semibold text-[#080808B3]">Pin Number</span>
+                                    </label>
+                                    <input id="pin_number" type="number" value="1234" placeholder="Enter 4 digit pin number"
+                                        class="input bg-[#F4F5F7] text-sm" required />
+
+                                </div>
+
+                                <!-- withdraw button -->
+                                <div class="form-control mt-6">
+                                    <button id="cash_out_btn"
+                                        class="btn bg-[#0874F2] text-white text-xl font-medium">Withdraw
+                                        Money</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            
+
+
         </main>
 
     </section>
 
+
+
+
     <script src="script/addMoney.js"></script>
+    <script src="script/cashOut.js"></script>
+    <script src="script/toggle.js"></script>
 
     <script>
-        document.getElementById('add_Money').addEventListener('click',
-            function (event) {
-                event.preventDefault();
-
-                const amount = document.getElementById('addAmount').value;
-                const amountConvert = parseInt(amount);
-
-                const mainAmount=document.getElementById('main_amount').innerHTML;
-                const mainAmountConvert=parseInt(mainAmount);
-
-                const pinNumber=document.getElementById('pin_number').value;
-                const pinNumberConvert=parseInt(pinNumber);
-
-                if(pinNumberConvert === 1234){
-                    const sum = amountConvert + mainAmountConvert;
-                    document.getElementById('main_amount').innerHTML=sum;
 
 
-                }
-
-                else
-                {
-                    alert('Please Provide Valid Pin Number')
-                }
-
-
-            }
-        )
     </script>
 </body>
 
